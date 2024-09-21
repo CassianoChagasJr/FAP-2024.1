@@ -24,7 +24,7 @@ body, html { /* Reseta as margens e preenchimentos padrão do corpo e do HTML */
     background-color: black; /*Define a cor de fundo da modal*/
     border-radius: 20px; /* Arredonda as bordas da modal */
     padding: 20px; /* Adiciona preenchimento à modal */
-    box-shadow: 0 0 10px rgb(4, 229, 241) ; /*Adiciona uma sombra à modal */
+    box-shadow: 0 0 10px rgb(4, 229, 241), inset 0 0 10px rgb(4,229,241) ; /*Adiciona uma sombra ao modal */
     border: solid rgb(7, 235, 247);
     width: 50%; /* Define a largura da modal */
     height: 50%; /* Define a altura da modal */
@@ -53,7 +53,7 @@ body, html { /* Reseta as margens e preenchimentos padrão do corpo e do HTML */
     font-size: 20px; /* Define o tamanho da fonte do botão */
     transition: all 0.1s; /* Adiciona uma transição para o botão */
     border: solid rgb(7,235,247);
-    box-shadow: 0 0 10px rgb(7,235, 247);
+    box-shadow: 0 0 10px rgb(7,235, 247), inset 0 0 10px rgb(7,235, 247);
   }
 
   .modal a {   /* Estiliza o link dentro do botão */
