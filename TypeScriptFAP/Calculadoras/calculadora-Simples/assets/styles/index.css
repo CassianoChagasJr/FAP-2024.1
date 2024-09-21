@@ -1,0 +1,128 @@
+body, html { /* Reseta as margens e preenchimentos padrão do corpo e do HTML */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Define a fonte padrão como sans-serif */
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da viewport */
+    display: flex; /* Cria um container flexbox para o corpo da página */
+    background-color: black; /* Define a cor de fundo da página */
+  }
+
+  .container { /* Cria um container para a modal */
+    position: relative; /* Posiciona o container relativamente ao seu pai */
+    height: 100vh; /* Define a altura do container como 100% da altura da viewport */
+    padding: 20px; /* Adiciona preenchimento ao container */
+    box-sizing: border-box; /*Inclui o padding e border nas dimensões do container*/
+    display: flex; /* Cria um container flexbox para o container */
+    justify-content: center; /* Centra o conteúdo horizontalmente */
+    align-items: center; /* Centra o conteúdo verticalmente */
+  }
+  
+  .modal { /* Estiliza a modal */
+    display: flex; /* Cria um container flexbox para a modal */
+    flex-direction: row; /*Define a direção do flexbox como coluna */
+    flex-wrap: wrap;
+    background-color: black; /*Define a cor de fundo da modal*/
+    border-radius: 20px; /* Arredonda as bordas da modal */
+    padding: 20px; /* Adiciona preenchimento à modal */
+    box-shadow: 0 0 10px rgb(4, 229, 241) ; /*Adiciona uma sombra à modal */
+    border: solid rgb(7, 235, 247);
+    width: 50%; /* Define a largura da modal */
+    height: 50%; /* Define a altura da modal */
+  }
+  
+  .modal p { /* Estiliza o parágrafo dentro da modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Define o display como block */
+    font-size: 20px; /* Define o tamanho da fonte do parágrafo */
+    color: rgb(7, 235, 247);
+    text-shadow:rgb(7, 235, 247);
+  }
+  
+  .modal button { /* Estiliza o botão dentro da modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none; /* Remove a borda do botão */
+    padding: 10px; /* Adiciona preenchimento ao botão */
+    width: 95vh; /* Define a largura do botão como 100% da altura da viewport */
+    margin: 20px 10px; /* Adiciona margem ao botão */
+    border-radius: 20px; /* Arredonda as bordas do botão */
+    font-size: 20px; /* Define o tamanho da fonte do botão */
+    transition: all 0.1s; /* Adiciona uma transição para o botão */
+    border: solid rgb(7,235,247);
+    box-shadow: 0 0 10px rgb(7,235, 247);
+  }
+
+  .modal a {   /* Estiliza o link dentro do botão */
+    text-decoration: none; /* Remove a decoração do link */
+    color: black; /* Define a cor do link */
+  }
+  
+  button:hover { /* Estiliza o botão quando o mouse passa sobre ele */
+    background: transparent; /* Define a cor de fundo do botão quando o mouse passa sobre ele */
+    cursor: pointer;  /* Define o cursor como ponteiro quando o mouse passa sobre ele */
+  }
+  
+  button:hover a { /* Estiliza o link dentro do botão quando o mouse passa sobre ele */
+    background: black; /* Define a cor de fundo do link quando o mouse passa sobre ele */
+    color: rgb(7, 235, 247);  /* Define a cor do texto do link quando o mouse passa sobre ele */
+  }
+
+  @media (max-width: 1011px) {
+    .container{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) { /* Para telas com até 768px de largura (tablets) */
+  .container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 480px) { /* Para telas com até 480px de largura (smartphones) */
+  .modal {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal p {
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal button {
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+}

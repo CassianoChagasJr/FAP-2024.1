@@ -1,0 +1,81 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: solid #F2D02C;
+    box-shadow: 0 0 15px #F2D02C, inset 0 0 15px #F2D02C;
+    border-radius: 20px;
+    margin: 50px 50px;
+    height: 50%;
+    box-sizing: border-box;
+    margin-top: 11.5%;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 50%;
+}
+
+.modal p {
+    display: flex;
+    padding: 5px;
+    color: #F2D02C;
+    text-shadow: #F2D02C;
+}
+
+.modal button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid #F2D02C;
+    box-shadow: 0 0 15px #F2D02C, inset 0 0 15px #F2D02C;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 20px 20px;
+}
+
+.modal a {
+    text-decoration: none;
+    color: #F2D02C;
+}
+
+
+@media (max-width: 1011px) {
+    .container{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
