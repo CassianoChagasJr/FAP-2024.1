@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    border: 2px solid;
+    border-radius: 15px;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.logo{
+    display: block;
+    width: 100px;
+    margin-right: 330px;
+    height: 100px;
+}
+
+.nav-bar li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar a{
+    border: 1px solid;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+.container {
+    display: flex;
+    border: solid;
+    width: 95%;
+    margin: 10px 10px;
+    position: relative;
+    padding: 20px;
+    gap: 20px;
+    height: 100vh;
+    flex-flow: wrap;
+    justify-content: center;
+    /* align-items: center; */
+ 
+}
+
+.left {
+    display: flex;
+    border: solid;
+    width: 45%;
+    /* justify-content: space-evenly; */
+}
+
+.right{
+    display: flex;
+    border: solid;
+    width: 45%;
+    /* justify-content: space-evenly; */
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    border: solid;
+    width: 45%;
+}
