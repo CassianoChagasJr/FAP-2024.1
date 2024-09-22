@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="/calculadora-imc/assets/style/imc.css">
+</head>
+<body>
+    <header>
+         <nav class="nav-bar">
+            <ul>
+                <li><a href="/index.html">Retornar a Home</a></li>
+                <li><a href="/calculadora-Simples/pages/calculadora.html">Projeto 1 - Calculadora nromal</a></li>
+                <li><a href="/calculadora-Combustivel/pages/calculadoraCombustivel.html">Projeto 2 - Calculadora </a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="modal">
+                <label for="peso">Peso</label>
+                <input type="number" placeholder="kg" id="peso">
+                <label for="altura">Altura</label>
+                <input type="number" placeholder="m" id="altura">
+                <button class="calculoIMC">Calcular IMC</button>
+
+                <div class="resultado"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="/calculadora-imc/dist/imc.js"></script>
+</body>
+</html>
