@@ -6,41 +6,15 @@ body, html {
     text-decoration: none;
     overflow: hidden;
 }
-
-.nav-bar {
-    display: flex;
-    border: 1px solid;
-    border-radius: 15px;
-    list-style: none;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    /* position: static; */
-}
-
-.nav-bar li {
-    display: flex;
-    padding: 5px;
-    align-items: center;
-}
-
-.nav-bar a{
-    border: 1px solid;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-}
-
 .container{
     display: flex;
     justify-content: center;
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 65vh;
     width: 99%;
     padding: 20px;
     gap: 20px;
-    margin: 10px 15px 0 ;
+    margin: 10px 15px 0 0 ;
     flex-flow: wrap;
     position: relative;
 }
@@ -49,7 +23,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
+    border: 1px;
+    box-shadow: 2px 2px 2px 2px #888888;
     border-radius: 10px;
     width: 70%;
     height: 50%;
@@ -69,7 +44,7 @@ input {
     background-color: #ddd;
 }
 
-.calculoIMC {
+button {
     width: 150px;
     height: 50px;
     font-size: 20px;
@@ -79,4 +54,14 @@ input {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Cor de fundo ao clicar nos botões */
+button:active {
+    background-color: #ccc;
 }
