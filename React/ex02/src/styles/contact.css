@@ -1,0 +1,24 @@
+.container-contact{
+    width: 90%;
+    height: 20vh;
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgb(53, 52, 52), inset 0.2rem 0.2rem 0.2rem 0.2rem rgb(86, 86, 86);
+    box-sizing: border-box;
+    margin-left: 0.5rem;
+}
+
+.contact-list{
+    display: flex;
+    list-style: none;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    /* margin-left: ; */
+
+    .a{
+        text-decoration: none;
+        color: white;
+    }
+}
+

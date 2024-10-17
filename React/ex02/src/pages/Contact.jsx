@@ -1,12 +1,18 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import "../styles/contact.css"
 
 function Contact () {
 
     return(
         <>
         <Header/>
-        <h2>Contato</h2>
+        <section className="container-contact">
+            <ul className="contact-list">
+                <li>GitHub</li>
+                <li>Linkedln</li>
+            </ul>
+        </section>
         <Footer/>        
         </>
     )
